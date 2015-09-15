@@ -368,7 +368,7 @@ public class EditorPanel extends JPanel {
 	
 	public void runLevel()
 	{
-		if(saveLevel())
+		//if(saveLevel())
 			frame.panel.loadLevel(frame.txtLevelName.getText());
 	}
 
