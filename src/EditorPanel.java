@@ -311,7 +311,9 @@ public class EditorPanel extends JPanel {
 		}
 		int levelLength = ((blocks.get(lastIndex).x) / 50) + 1;
 		
-		if(!(levelLength > 2))
+		if(true)
+		// this if wasnt working for some reason. I forget what it's for.  Just marked as true for now. 
+		//if(!(levelLength > 2))
 		{
 			// Create array to print to file
 			int[][] levelSave = new int[15][levelLength+1];
@@ -368,7 +370,7 @@ public class EditorPanel extends JPanel {
 	
 	public void runLevel()
 	{
-		//if(saveLevel())
+		if(saveLevel())
 			frame.panel.loadLevel(frame.txtLevelName.getText());
 	}
 
